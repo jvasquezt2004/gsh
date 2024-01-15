@@ -1,9 +1,10 @@
 package main
 
 import (
-	"os"
+	"fmt"
 
 	"github.com/jvasquezt2004/gsh/internal/lexer"
+	"github.com/jvasquezt2004/gsh/internal/parser"
 )
 
 func main() {
@@ -14,9 +15,9 @@ func main() {
 			continue
 		}
 
-		if len(tokens) > 0 && tokens[0] == "exit" {
-			os.Exit(0)
+		command, args := parser.ParseCommand(tokens)
 
-		}
+		fmt.Println(command)
+		fmt.Println(args)
 	}
 }
