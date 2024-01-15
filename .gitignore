@@ -1,0 +1,65 @@
+# Binarios compilados #
+#######################
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.bin
+*.out
+*.o
+*.test
+
+# Dependencias #
+################
+# (Omitir si utilizas Go Modules, ya que no se necesita el directorio 'vendor/')
+vendor/
+
+# Archivos de Caché #
+#####################
+*.log
+*.cache/
+nohup.out
+
+# Herramientas de Desarrollo #
+##############################
+.vscode/
+.idea/
+.history/
+*.swp
+*.swo
+
+# Sistema Operativo #
+#####################
+.DS_Store
+thumbs.db
+
+# Configuraciones Específicas del Usuario #
+###########################################
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Directorios de Compilación #
+##############################
+dist/
+build/
+
+# Archivos Temporales #
+#######################
+*.tmp
+*.temp
+
+# Otros Directorios #
+#####################
+/debug/
+/profile.out
+
+# Herramientas de Documentación #
+#################################
+docs/_build/
+
+# Sesión de Vim #
+#################
+session.vim
