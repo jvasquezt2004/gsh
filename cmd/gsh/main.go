@@ -1,8 +1,7 @@
 package main
 
 import (
-	"fmt"
-
+	"github.com/jvasquezt2004/gsh/internal/executor"
 	"github.com/jvasquezt2004/gsh/internal/lexer"
 	"github.com/jvasquezt2004/gsh/internal/parser"
 )
@@ -17,7 +16,6 @@ func main() {
 
 		command, args := parser.ParseCommand(tokens)
 
-		fmt.Println(command)
-		fmt.Println(args)
+		executor.ExecuteInput(command, args)
 	}
 }
